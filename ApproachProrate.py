@@ -61,7 +61,7 @@ if __name__ == '__main__':
 	for tuple1 in approach_target(num_list,num_rate[0]):
 		first_list = tuple1[0]
 		filter1_list = [i for i in num_list if i not in tuple1[0]]
-		for tuple2 in approach_target(num_list,num_rate[1]):
+		for tuple2 in approach_target(filter1_list,num_rate[1]):
 			second_list = tuple2[0]
 			filter2_list = [i for i in filter1_list if i not in tuple2[0]]
 			for tuple3 in approach_target(filter2_list,num_rate[2]):
